@@ -1,22 +1,3 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Deploy an EC2 instance and an S3 bucket
-
-Resources:
-  MyEC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
-      InstanceType: t3.micro
-      ImageId: ami-016038ae9cc8d9f51 # Amazon Linux 2 (change per region)
-      Tags:
-        - Key: Name
-          Value: MyEC2Instance
-
-
-  MyEC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
-      InstanceType: t3.micro
-      ImageId: ami-016038ae9cc8d9f51 # Amazon Linux 2 (change per region)
-      Tags:
-        - Key: Name
-          Value: MyEC2Instance          
+  
