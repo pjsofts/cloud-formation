@@ -10,3 +10,12 @@ Resources:
       Tags:
         - Key: Name
           Value: MyEC2Instance
+
+  MyEC2Instance2:
+      Type: AWS::EC2::Instance
+      Properties:
+        InstanceType: t2.micro
+        ImageId: ami-0c8db01b2e8e5298d # Amazon Linux 2 (change per region)
+        Tags:
+          - Key: Name
+            Value: MyEC2Instance2
