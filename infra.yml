@@ -1,21 +1,7 @@
-AWSTemplateFormatVersion: "2010-09-09"
+#helloAWSTemplateFormatVersion: "2010-09-09"
 Description: Deploy an EC2 instance and an S3 bucket
-
 Resources:
-  MyEC2Instance:
-    Type: AWS::EC2::Instance
+  PlaceholderBucket:
+    Type: AWS::S3::Bucket
     Properties:
-      InstanceType: t2.micro
-      ImageId: ami-0c8db01b2e8e5298d # Amazon Linux 2 (change per region)
-      Tags:
-        - Key: Name
-          Value: MyEC2Instance
-
-  MyEC2Instance2:
-      Type: AWS::EC2::Instance
-      Properties:
-        InstanceType: t2.micro
-        ImageId: ami-0c8db01b2e8e5298d # Amazon Linux 2 (change per region)
-        Tags:
-          - Key: Name
-            Value: MyEC2Instance2
+      BucketName: my-placeholder-bucket-454
