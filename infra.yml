@@ -1,6 +1,12 @@
 AWSTemplateFormatVersion: "2010-09-09"
+Description: Deploy an EC2 instance and an S3 bucket
+
 Resources:
-  PlaceholderBucket:
-    Type: AWS::S3::Bucket
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
     Properties:
-      BucketName: my-placeholder-bucket-123456
+      InstanceType: t2.micro
+      ImageId: ami-0c8db01b2e8e5298d # Amazon Linux 2 (change per region)
+      Tags:
+        - Key: Name
+          Value: MyEC2Instance
